@@ -1,7 +1,7 @@
 // src/app/movies/[id]/page.tsx
 
 import { getMovieById } from "@/lib/api";
-import { Movie, Episode } from "@/types/movie";
+import { Movie } from "@/types/movie";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link"; // Import Link

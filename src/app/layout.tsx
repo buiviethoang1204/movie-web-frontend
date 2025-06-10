@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import SearchInput from "@/components/SearchInput"; // Import SearchInput
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,9 +25,9 @@ export default function RootLayout({
         <header className="bg-gray-900 text-white p-4 shadow-md">
           <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <h1 className="text-2xl font-bold">
-              <a href="/" className="hover:text-gray-300">
+              <Link href="/" className="hover:text-gray-300">
                 MovieApp
-              </a>{" "}
+              </Link>
               {/* Thêm link về trang chủ */}
             </h1>
             <SearchInput /> {/* Sử dụng SearchInput component */}
