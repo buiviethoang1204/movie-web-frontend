@@ -9,12 +9,9 @@ import { ChevronLeftIcon } from "@heroicons/react/20/solid"; // Biểu tượng 
 
 // Để sử dụng Heroicons, bạn cần cài đặt:
 // npm install @heroicons/react
-
-interface MovieDetailPageProps {
-  params: {
-    id: string;
-  };
-}
+type MovieDetailPageProps = {
+  params: { id: string };
+};
 
 export default async function MovieDetailPage({
   params,
