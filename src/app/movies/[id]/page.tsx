@@ -26,7 +26,7 @@ export default async function MovieDetailPage({
     notFound();
   }
 
-  const getYouTubeVideoId = (url: string) => {
+  const getYouTubeVideoId = (url: string | undefined | null) => {
     if (!url) return null;
     const regExp =
       /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/\s]{11})/i;
